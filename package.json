@@ -4,6 +4,7 @@
   "main": "index.js",
   "devDependencies": {
     "autoprefixer": "^9.5.0",
+    "cpx": "^1.5.0",
     "parcel-bundler": "^1.12.2",
     "postcss-cli": "^6.1.2",
     "push-dir": "^0.4.1",
@@ -14,7 +15,7 @@
     "scss": "npx node-sass --output-style compressed -o src/css src/scss",
     "serve": "npx parcel --no-cache --port 8080 src/index.html",
     "build": "npm run scss && npm run postcss && npx parcel build --no-cache src/index.html",
-    "deploy": "npx push-dir --dir=dist --branch=gh-pages"
+    "deploy": "npx cpx CNAME dist && npx push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
     "type": "git",
