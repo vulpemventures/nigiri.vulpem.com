@@ -36,7 +36,7 @@
 							<h1 class="hero-title mt-0">Nigiri Bitcoin</h1>
 							<p class="hero-paragraph"> A delicious docker box for special Bitcoin cookings.</p>
 							<div class="hero-cta">
-								<a class="button button-primary" href="#">Download</a>
+								<a class="button button-primary" href="#install">Install</a>
 								<!-- 	<div class="lights-toggle">
 									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
 									<label for="lights-toggle" class="text-xs"><span>Turn me <span
@@ -60,22 +60,23 @@
 				</div>
 			</section>
 
-			<section class="features section">
+			<section id="install" class="features section">
 				<div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
 								<h2 class="section-title mt-0">One-click Blockchain</h2>
 								<p class="section-paragraph">Quickly fire up a personal Bitcoin blockchain along with Liquid and
-									Electrum. which you can use to run tests and execute rpc commands locally or deploy in a
-									multi-container online in production.</p>
+									Electrum. <br />
+									You can use to run tests locally and execute API calls or deploy in a
+									multi-container online</p>
 								<div class="features-image">
-
-									<img class="features-box asset-dark" src="images/features-box-dark.svg" alt="Feature box">
-
-
-									<img class="features-box asset-light" src="images/features-box-light.svg" alt="Feature box">
-
+									<div class="shell-wrap">
+										<p class="shell-top-bar">Install</p>
+										<ul class="shell-body">
+											<li>curl https://getnigiri.vulpem.com | bash</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -151,10 +152,30 @@
 				<div class="container-sm">
 					<div class="cta-inner section-inner">
 						<div class="cta-header text-center">
-							<h2 class="section-title mt-0">Enjoy your Nigiri</h2>
-							<div class="cta-cta">
-								<a class="button button-primary" href="#">Download</a>
-							</div>
+							<h2 class="section-title mt-0">Need help?</h2>
+							<p>
+								You can start and stop Nigiri
+							</p>
+							<div class="shell-wrap">
+									<p class="shell-top-bar"><strong>Start</strong></p>
+									<ul class="shell-body">
+										<li>nigri start</li>
+									</ul>
+								</div>
+
+								<div class="shell-wrap">
+									<p class="shell-top-bar"><strong>Stop</strong></p>
+									<ul class="shell-body">
+										<li>nigri stop</li>
+									</ul>
+								</div>
+
+								<div class="shell-wrap">
+										<p class="shell-top-bar"><strong>Delete</strong></p>
+										<ul class="shell-body">
+											<li>nigri stop --delete</li>
+										</ul>
+									</div>
 						</div>
 					</div>
 				</div>
@@ -167,8 +188,8 @@
 					<div>
 						<span class="header-logo-image asset-light">🍣</span>
 						<span class="header-logo-image asset-dark">🍣</span>
-						&copy; 2019 Vulpem Ventures, all rights reserved - 
-						Design by <a href="https://cruip.com" target="_blank" >Cruip</a>
+						&copy; 2019 Vulpem Ventures, all rights reserved -
+						Design by <a href="https://cruip.com" target="_blank">Cruip</a>
 					</div>
 
 				</div>
