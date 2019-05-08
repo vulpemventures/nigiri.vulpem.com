@@ -24,11 +24,15 @@
     })
   }
 
+ // body.classList.add('lights-off');
+
   if (body.classList.contains('has-animations')) {
     window.addEventListener('load', revealAnimations)
   }
 
-  // Light switcher
+  body.classList.add('lights-off')
+  
+  /* // Light switcher
   if (lightSwitch) {
     window.addEventListener('load', checkLights)
     lightSwitch.addEventListener('change', checkLights)
@@ -47,5 +51,5 @@
         labelText.innerHTML = 'light'
       }
     }
-  }
+  }  */
 }())
