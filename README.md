@@ -12,7 +12,7 @@ $ npm install
 * Serve and watch 
 
 ```sh
-$ npm run watch
+$ npm run serve
 ```
 
 # Build
